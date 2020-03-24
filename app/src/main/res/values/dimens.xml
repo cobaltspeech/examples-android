@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_padding_smallest">4dp</dimen>
+    <dimen name="horizontal_padding_small">8dp</dimen>
+    <dimen name="horizontal_padding_middle">16dp</dimen>
+    <dimen name="horizontal_padding_large">24dp</dimen>
+    <dimen name="horizontal_padding_xxlarge">44dp</dimen>
+
+    <dimen name="vertical_padding_smallest">4dp</dimen>
+    <dimen name="vertical_padding_small">8dp</dimen>
+    <dimen name="vertical_padding_small_plus">12dp</dimen>
+    <dimen name="vertical_padding_middle">16dp</dimen>
+    <dimen name="vertical_padding_large">24dp</dimen>
+    <dimen name="vertical_padding_xxlarge">44dp</dimen>
+</resources>

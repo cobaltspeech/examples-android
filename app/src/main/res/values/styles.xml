@@ -1,0 +1,30 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.MainActivity" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="AppTheme.FloatActionButton" parent="Widget.Design.FloatingActionButton">
+        <item name="fabCustomSize">64dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="AppTheme.ClearButton" parent="AppTheme.FloatActionButton">
+        <item name="fabCustomSize">48dp</item>
+    </style>
+
+    <style name="AppTheme.OptionsButton" parent="AppTheme.FloatActionButton">
+        <item name="fabCustomSize">48dp</item>
+    </style>
+
+</resources>

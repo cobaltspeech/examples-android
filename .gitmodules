@@ -1,0 +1,3 @@
+[submodule "sdk-cubic"]
+	path = sdk-cubic
+	url = https://github.com/cobaltspeech/sdk-cubic
