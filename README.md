@@ -1,6 +1,6 @@
 # Android Sample App
 
-![](https://github.com/cobaltspeech/examples-android/screenshot/photo_2020-03-11_18-03-51.jpg)
+![](https://raw.githubusercontent.com/cobaltspeech/examples-android/master/screenshot/photo_2020-03-11_18-03-51.jpg?token=ACSISJ4ILFORQ6MOUNCU4K26QM64M)
 
 This app demonstrates Cubic speech recognition experience using the device's built-in microphone.
 
@@ -10,15 +10,15 @@ This app demonstrates Cubic speech recognition experience using the device's bui
 
 To change the settings for connecting to the Cubic service, click on the gear icon. In the settings you can specify the host and port of the connection, as well as the security of the connection.
 
-![](https://github.com/cobaltspeech/examples-android/screenshot/photo_2020-03-11_18-03-48.jpg)
+![](https://raw.githubusercontent.com/cobaltspeech/examples-android/master/screenshot/photo_2020-03-11_18-03-48.jpg?token=ACSISJYFPP2LNO4L2KNG4QK6QM63K)
 
 To select the recognition model (language, recording frequency), click on the drop-down list at the top of the screen.
 
-![](https://github.com/cobaltspeech/examples-android/screenshot/photo_2020-03-11_18-03-54.jpg)
+![](https://github.com/cobaltspeech/examples-android/blob/master/screenshot/photo_2020-03-11_18-03-54.jpg)
 
 After selecting a model, the microphone button is activated. While holding the microphone button, the application will start transmitting sound recording to the Cubic server, after releasing the button, the speech text will be displayed on the screen.
 
-![](https://github.com/cobaltspeech/examples-android/screenshot/photo_2020-03-11_18-03-44.jpg)
+![](https://raw.githubusercontent.com/cobaltspeech/examples-android/master/screenshot/photo_2020-03-11_18-03-44.jpg?token=ACSISJYD3BSZ2XLCPRQCXMK6QM6ZO)
 
 You can clear the screen with the result by clicking on the button with the basket
 
