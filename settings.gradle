@@ -1,2 +1,2 @@
-include ':app', ':sdk-cubic:examples:android:cubicsdk'
+include ':app', ':sdk-cubic:grpc:android-cubic'
 rootProject.name='cubic-examples-android'

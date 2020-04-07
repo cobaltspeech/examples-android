@@ -38,11 +38,11 @@ You can clear the screen with the result by clicking on the button with the bask
 
 To complete the integration of CubicSDK with Android, you just need to add the **cubicsdk ** module dependency to **build.gradle**.
 
-`implementation project(path: ':sdk-cubic:examples:android:cubicsdk')`
+`implementation project(path: ':sdk-cubic:grpc:android-cubic')`
 
 Do not forget to check for the correct path to the **sdk-cubic** module for the project in **settings.gradle** file.
 
-`include ':app', ':sdk-cubic:examples:android:cubicsdk'`
+`include ':app', ':sdk-cubic:grpc:android-cubic'`
 
 After that, it remains to synchronize the gradle so that the CubicSDK can load the dependencies of the proto-buf models.
 
