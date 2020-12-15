@@ -2,17 +2,84 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutCompat"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/urlInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight=".75"
+        android:hint="@string/url_hint"
+        app:layout_constraintBottom_toTopOf="@+id/modelSpinner"
+        app:layout_constraintEnd_toStartOf="@id/connectButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/connectButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_weight=".25"
+        android:text="@string/txt_Connect"
+        app:layout_constraintBottom_toTopOf="@+id/modelSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/urlInput"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/modelSpinner"
+        android:layout_width="0dp"
+        app:layout_constraintHorizontal_weight=".75"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toTopOf="@+id/conversationView"
+        app:layout_constraintEnd_toStartOf="@id/startButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urlInput" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_Start"
+        app:layout_constraintHorizontal_weight=".25"
+        app:layout_constraintBottom_toTopOf="@+id/conversationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/modelSpinner"
+        app:layout_constraintTop_toBottomOf="@id/connectButton" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/conversationView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/userText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modelSpinner" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/userText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sendButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conversationView" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_Send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/userText"
+        app:layout_constraintTop_toBottomOf="@+id/conversationView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

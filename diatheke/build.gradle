@@ -16,6 +16,20 @@ allprojects {
     repositories {
         google()
         jcenter()
+
+        // Here we add a link to Cobalt's SDK-Diatheke maven repository.
+        // See the README.md for more details.
+        def githubPropertiesFile = rootProject.file("github.properties")
+        def githubProperties = new Properties()
+        githubProperties.load(new FileInputStream(githubPropertiesFile))
+        maven {
+            url = uri("https://maven.pkg.github.com/cobaltspeech/sdk-diatheke")
+            credentials {
+                username = githubProperties['GITHUB_USER']  // Your github username
+                password = githubProperties['GITHUB_TOKEN'] // Personal Access Token created from https://github.com/settings/tokens
+            }
+        }
+        // End link to Cobalt's SDK-Diatheke maven repository.
     }
 }
 

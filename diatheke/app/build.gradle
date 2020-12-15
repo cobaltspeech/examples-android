@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.cobaltspeech.diathekeexample"
-        minSdkVersion 16
+        minSdkVersion 24
         targetSdkVersion 29
         versionCode 1
         versionName "2.0"
@@ -21,6 +21,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -28,6 +29,17 @@ android {
 }
 
 dependencies {
+    // Here we add the sdk-diatheke client library, and other grpc libraries we need to use it.
+    implementation('com.cobaltspeech.diatheke:sdk-diatheke-lite:2.0.0-rc1') {
+        exclude group: 'com.google.protobuf', module: 'protobuf-javalite'
+    }
+    implementation 'com.google.protobuf:protobuf-javalite:3.13.0'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation 'io.grpc:grpc-core:1.33.0'
+    implementation 'io.grpc:grpc-stub:1.33.0'
+    implementation 'io.grpc:grpc-okhttp:1.33.0'
+    // end sdk-diatheke client library/dependencies
+
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.2'

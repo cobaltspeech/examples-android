@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DiathekeExample</string>
+    <string name="txt_Connect">Connect</string>
+    <string name="txt_Disconnect">Disconnect</string>
+    <string name="txt_Stop">Stop</string>
+    <string name="txt_Start">Start</string>
+    <string name="url_hint">server url (i.e. server:port)</string>
+    <string name="txt_Send">Send</string>
 </resources>
